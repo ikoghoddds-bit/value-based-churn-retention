@@ -1,33 +1,33 @@
 # Value-Based Customer Churn Prediction & Prioritized Retention List
 
-**Joseph Ikogho · Data Science Portfolio Project 1**  
-Public IBM Telco sample · Logistic regression · Recall-first screening · Revenue prioritization  
+**Joseph Ikogho · Data Science Portfolio Project**  
+Public IBM Telco Sample · Logistic Regression · Recall-first Screening · Revenue Prioritization  
 Designed by Nova Agentic
 
-## The business decision
+## The Business Decision
 
 **Whom should retention teams call first, and how much can they justify spending?** Churn prediction alone treats a $20/month customer like a $100/month customer. This project translates risk into monthly financial exposure, then attaches a transparent retention budget and an actionable ranked list.
 
-**Core score: expected monthly revenue loss = P(churn) × monthly customer value.** The model is deliberately simple. Most of the project's value is in financial definitions, asymmetric mistakes, resource allocation and intervention assumptions.
+**Core Score: Expected Monthly Revenue Loss = P(churn) × Monthly Customer Value.** The model is deliberately simple. Most of the project's value is in financial definitions, asymmetric mistakes, resource allocation and intervention assumptions.
 
 The main project uses the public [IBM Telco Customer Churn sample](https://github.com/IBM/telco-customer-churn-on-icp4d). It contains 7,043 sample records; this is not a live company portfolio or evidence of realized savings. The earlier pension-member work remains a **separate, explicitly synthetic extension** under [`extensions/pension`](extensions/pension/README.md).
 
-## Results and tradeoffs
+## Results and Tradeoffs
 
-| Held-out evidence | Result |
+| Held-out Evidence | Result |
 |---|---:|
-| Test customers | 1,409 |
-| Recall-first threshold (chosen on validation) | 0.24 |
+| Test Customers | 1,409 |
+| Recall-first Threshold (chosen on validation) | 0.24 |
 | Validation recall target / achieved | ≥85% / 85.3% |
-| Test recall | **82.9%** |
+| Test Recall | **82.9%** |
 | Test recall at default 0.50 | 53.5% |
 | Test precision at recall-first threshold | 48.4% |
-| Churners caught / missed | 310 / 64 |
-| Nonchurners flagged | 330 |
-| ROC AUC / average precision | 0.833 / 0.625 |
-| Brier score | 0.141 |
+| Churners Caught / Missed | 310 / 64 |
+| Nonchurners Flagged | 330 |
+| ROC AUC / Average Precision | 0.833 / 0.625 |
+| Brier Score | 0.141 |
 | Expected monthly revenue exposure, all test customers | **$28,314** |
-| Six-month constant-revenue exposure scenario | $169,887 |
+| Six-month constant-revenue Exposure Scenario | $169,887 |
 | Expected saved revenue, 200-contact uniform-cost campaign | $17,781 |
 | Expected net contribution, same campaign | $8,447 |
 
