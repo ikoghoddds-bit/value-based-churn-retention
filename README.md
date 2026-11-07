@@ -76,7 +76,7 @@ The default threshold is the **highest validation threshold with at least 85% re
 
 The illustrative screening-cost scenario sets **FP=$20, FN=$100 (5:1)**. On the test set, the recall-first rule costs $13,000 in these diagnostic penalties versus $19,840 at threshold 0.50. These figures are **not retention profit or company-validated costs**. The assumed ratio is examined at 1:1, 3:1, 5:1 and 10:1 in [`outputs/error_cost_sensitivity.csv`](outputs/error_cost_sensitivity.csv). A cost-minimizing comparison threshold is selected on validation for each ratio and evaluated on test. The recall-target rule need not minimize every ratio.
 
-## Simple, leakage-safe approach
+## Simple, Leakage-safe Approach
 
 1. Convert eleven blank cumulative charges to missing values. Exclude ID, target and demographic fields from predictors; retain gender and senior indicator only for a descriptive audit.
 2. Fixed seed 42, stratified 60/20/20 split: 4,225 train, 1,409 validation, 1,409 test; each ID occurs once.
@@ -87,7 +87,7 @@ The illustrative screening-cost scenario sets **FP=$20, FN=$100 (5:1)**. On the 
 
 IBM supplies a cross-sectional churn label, not timestamped forward outcomes. This benchmark predicts that supplied label and illustrates future-risk deployment; it does **not** validate a prospective one-month or six-month churn horizon. The monthly unit is a customer-value unit. Production needs pre-churn feature lineage, time-stamped snapshots and a temporal holdout.
 
-## Business recommendations
+## Business Recommendations
 
 - Start a capacity-limited pilot with the largest expected monthly exposures, excluding contacts whose expected contribution cannot cover all-in cost. Show the recall flag and dollar rank separately.
 - Use the spending cap to set an upper bound on outreach plus incentives. Prefer a cheaper proven-effective option when one exists; do not spend more simply because the account can afford it.
@@ -95,7 +95,7 @@ IBM supplies a cross-sectional churn label, not timestamped forward outcomes. Th
 - Randomize outreach versus control within prespecified risk/value bands. Record contact cost, incentive redemption and retained revenue; evaluate incremental contribution with uncertainty. Use treatment-specific save rates only after suitable evidence exists.
 - Monitor calibration, recall, outreach volume, subgroup errors, data drift and realized contribution. Revisit thresholds and budgets when real missed-churn versus unnecessary-contact costs are known.
 
-## Run and reproduce
+## Run and Reproduce
 
 Python **3.12** recommended. Extract the archive and open a terminal inside `value-based-churn`.
 
@@ -119,7 +119,7 @@ python -m pytest -q
 
 Open [`notebooks/01_value_based_churn.ipynb`](notebooks/01_value_based_churn.ipynb) in VS Code or Jupyter. Load only the trusted supplied joblib model. The scoring interface validates IDs, categories, finite/nonnegative numerical inputs and optional missing cumulative charges. A new data source must use the same schema and business meanings, not just the same column names.
 
-## Repository map
+## Repository Map
 
 | File | Purpose |
 |---|---|
@@ -138,7 +138,7 @@ Open [`notebooks/01_value_based_churn.ipynb`](notebooks/01_value_based_churn.ipy
 | `tests/`, `.github/workflows/` | Local checks, push/PR CI and manual reproduction |
 | `extensions/pension/` | Separate synthetic member-transfer and fee-exposure example |
 
-## Limits and licensing
+## Limits and Licensing
 
 No realized retention outcomes, causal uplift, lifetime value, treatment-specific effects or actual company savings are established. Financial scenarios assume constant monthly charges, margin, save rate and a retained horizon without repeat churn or discounting. Fixed-model bootstrap AUC intervals exclude retraining uncertainty. Proxy bias can remain after demographic exclusion. The pension extension uses fabricated data and treats assets and fee revenue separately; its results must not be mixed with the Telco benchmark.
 
