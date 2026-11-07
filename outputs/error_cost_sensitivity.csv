@@ -1,0 +1,13 @@
+fn_to_fp_ratio,policy,threshold,fp,fn,diagnostic_cost
+1,recall_first,0.24,330,64,7880
+1,default_0_5,0.5,122,174,5920
+1,validation_cost_min,0.56,92,208,6000
+3,recall_first,0.24,330,64,10440
+3,default_0_5,0.5,122,174,12880
+3,validation_cost_min,0.32,245,90,10300
+5,recall_first,0.24,330,64,13000
+5,default_0_5,0.5,122,174,19840
+5,validation_cost_min,0.18,403,41,12160
+10,recall_first,0.24,330,64,19400
+10,default_0_5,0.5,122,174,37240
+10,validation_cost_min,0.07,625,14,15300

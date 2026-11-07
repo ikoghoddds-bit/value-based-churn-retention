@@ -1,0 +1,48 @@
+{
+  "roc_auc": 0.7746746944644141,
+  "average_precision": 0.33160119513054603,
+  "brier": 0.0850769104369276,
+  "precision": 0.22800495662949194,
+  "recall": 0.7076923076923077,
+  "f2": 0.49810503519220356,
+  "auc_ci95": [
+    0.7410566041069405,
+    0.8041912471793393
+  ],
+  "winner": "logistic",
+  "threshold": 0.1,
+  "rows": 14400,
+  "train_rows": 7200,
+  "base_fit_rows": 4800,
+  "calibration_rows": 1200,
+  "internal_embargo_rows": 1200,
+  "validation_rows": 2400,
+  "test_rows": 2400,
+  "embargo_rows": 2400,
+  "test_churn_rate": 0.10833333333333334,
+  "flagged_members": 807,
+  "test_total_balance": 188507565.41,
+  "flagged_balance_if_all_leave": 64625425.34,
+  "expected_outflow_90d": 19294568.888719965,
+  "expected_annual_fee_revenue_at_risk": 114992.1433978246,
+  "observed_synthetic_outflow_90d": 19748855.369999997,
+  "campaign": {
+    "policy": "value",
+    "contacts": 142,
+    "expected_assets_retained": 1668897.2006283232,
+    "expected_fee_revenue_preserved": 11023.414137466185,
+    "expected_net_contribution": 4166.389896226329,
+    "label_based_scenario_net": 5369.333131624999
+  },
+  "confusion_matrix": [
+    [
+      1517,
+      623
+    ],
+    [
+      76,
+      184
+    ]
+  ],
+  "data_sha256": "9dcf3426c1634a6dd30ef1cdf51ae1ab9681bd0f84e4d9762fa7531d394d30f9"
+}

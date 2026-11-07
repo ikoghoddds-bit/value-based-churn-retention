@@ -1,0 +1,7 @@
+Dataset: IBM Telco Customer Churn sample, downloaded November 6, 2026.
+Source: https://github.com/IBM/telco-customer-churn-on-icp4d
+CSV: https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv
+Upstream repository distributed under Apache License 2.0; see DATA_LICENSE.
+This project independently implements analysis of the unmodified CSV. It does not
+claim ownership of the dataset or endorsement by IBM. Sample data are not evidence
+of results at a real company. Financial amounts are USD scenario estimates.

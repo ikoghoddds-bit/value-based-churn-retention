@@ -1,0 +1,52 @@
+{
+  "roc_auc": 0.8326642382908367,
+  "pr_auc": 0.6252198859296575,
+  "brier": 0.14127545556740828,
+  "precision": 0.484375,
+  "recall": 0.8288770053475936,
+  "f1": 0.611439842209073,
+  "f2": 0.7256554307116105,
+  "auc_ci95": [
+    0.8102076994204527,
+    0.8541469792764329
+  ],
+  "winner": "logistic",
+  "threshold": 0.24,
+  "rows": 7043,
+  "test_rows": 1409,
+  "churn_rate": 0.2653698707936959,
+  "test_churn_rate": 0.2654364797728886,
+  "missing_total_charges": 11,
+  "monthly_revenue_at_risk": 28314.460007663263,
+  "six_month_revenue_at_risk": 169886.7600459796,
+  "campaign": {
+    "strategy": "value",
+    "contacts": 200,
+    "expected_saved_revenue": 17781.175194072537,
+    "expected_net_value": 8446.822635850775,
+    "label_based_scenario_net": 8496.994999999999
+  },
+  "confusion_matrix": [
+    [
+      705,
+      330
+    ],
+    [
+      64,
+      310
+    ]
+  ],
+  "flagged_customers": 640,
+  "validation_recall": 0.8529411764705882,
+  "test_at_threshold_0_5": {
+    "roc_auc": 0.8326642382908367,
+    "pr_auc": 0.6252198859296575,
+    "brier": 0.14127545556740828,
+    "precision": 0.6211180124223602,
+    "recall": 0.5347593582887701,
+    "f1": 0.5747126436781609,
+    "f2": 0.5500550055005501
+  },
+  "diagnostic_cost_5_to_1": 13000.0,
+  "data_sha256": "16320c9c1ec72448db59aa0a26a0b95401046bef5d02fd3aeb906448e3055e91"
+}
