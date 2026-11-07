@@ -35,7 +35,7 @@ The validation target is not a guarantee of 85% test or future recall. Lowering 
 
 ![Model and business evaluation](outputs/evaluation.png)
 
-## The prioritized action list
+## The Prioritized Action List
 
 [`outputs/prioritized_call_list.csv`](outputs/prioritized_call_list.csv) ranks **all** held-out customers by the exact monthly score. The flag is a separate screening signal; a high-value, lower-probability account can outrank a flagged low-value account. Actual outcomes are excluded from outreach lists.
 
@@ -49,7 +49,7 @@ The validation target is not a guarantee of 85% test or future recall. Lowering 
 
 The list includes rank, ID, probability, flag, monthly customer value, expected monthly loss, break-even total retention spend, remaining incentive cap, an illustrative support tier and expected contribution after that tier. [`flagged_customers.csv`](outputs/flagged_customers.csv) is the recall-first flagged subset; [`retention_queue.csv`](outputs/retention_queue.csv) is the separate capacity-constrained, positive-value uniform-cost campaign queue.
 
-## Financial framework
+## Financial Framework
 
 For probability p, monthly revenue V, retained months H, assumed conditional save rate s, contribution margin m and outreach cost c:
 
